@@ -4,7 +4,7 @@ provider "google" {
   zone=var.zone
   credentials=file("gcp-key.json")
 }
-resource "google-compute-nstance" "vm-meh" {
+resource "google-compute-instance" "vm-meh" {
   name = var.instance_name
   machine_type = var.machine_type
   zone= var.zone
