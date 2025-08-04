@@ -18,4 +18,9 @@ network_interface {
     network = "default"
     access_config {}
   }
+metadata_startup_script = <<-EOT
+    #!/bin/bash
+    sudo apt update -y
+    sudo apt install -y curl git
+  EOT
 }
